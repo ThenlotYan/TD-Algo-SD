@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include "Prime.h"
 
-// Vérifie si un nombre est premier
+
 bool est_premier(int nombre) {
     if (nombre < 2)
         return false;
@@ -14,7 +14,7 @@ bool est_premier(int nombre) {
     return true;
 }
 
-// Méthode naïve : teste chaque nombre jusqu'à n
+
 int compte_premiers_naif(int n) {
     int compteur = 0;
     for (int i = 2; i <= n; i++) {
@@ -24,7 +24,7 @@ int compte_premiers_naif(int n) {
     return compteur;
 }
 
-// Méthode rapide : Crible d'Ératosthène
+
 int compte_premiers_cieve(int n) {
     if (n < 2)
         return 0;

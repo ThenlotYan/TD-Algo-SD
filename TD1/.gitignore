@@ -1,0 +1,9 @@
+# Ignorer les fichiers binaires et objets
+*.o
+*.out
+*.gch
+*.exe
+
+# Ignorer les dossiers de build temporaires
+build/
+bin/

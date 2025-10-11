@@ -5,7 +5,7 @@
 
 
 void main() {
-    int n = 33;
+    int n = 30;
     int tabfib[n+1];
     for (int i=0; i<n+1; i++) {
     tabfib[i] = -1;
@@ -14,7 +14,7 @@ void main() {
 
     clock_t begin= clock();
     printf("%i \n",Fibonacci1(n));
-        clock_t end = clock();
+    clock_t end = clock();
     printf("Time taken: %lf\n", (double)(end - begin) / CLOCKS_PER_SEC);
 
 
