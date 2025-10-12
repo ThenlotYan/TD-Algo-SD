@@ -29,7 +29,7 @@ int compte_premiers_cieve(int n) {
     if (n < 2)
         return 0;
 
-    bool *est_premier = malloc((n + 1) * sizeof(bool));
+    bool est_premier[n+1];
     if (est_premier == NULL) {
         printf("Erreur d'allocation mémoire.\n");
         return -1;
