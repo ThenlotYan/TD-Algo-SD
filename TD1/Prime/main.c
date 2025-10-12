@@ -3,9 +3,9 @@
 #include "Prime.h"
 
 int main() {
-    long long int n = 100;
+    long long int n = 10000000;
     __clock_t begin1 = clock();
-    printf("Nombre de nombres premiers entre 2 et %lld (méthode naïve) : %d\n", n, compte_premiers_naif(n));
+    printf("Le nombre de nombres premiers entre 2 et %lld (méthode naïve) : %d\n", n, compte_premiers_naif(n));
     __clock_t end1 = clock();
     printf("Temps écoulé (méthode naïve) : %lf secondes\n", (double)(end1 - begin1) / CLOCKS_PER_SEC);
 

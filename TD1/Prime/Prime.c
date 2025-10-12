@@ -15,7 +15,7 @@ bool est_premier(int nombre) {
 }
 
 
-int compte_premiers_naif(int n) {
+int compte_premiers_naif(long long int n) {
     int compteur = 0;
     for (int i = 2; i <= n; i++) {
         if (est_premier(i))
@@ -25,13 +25,13 @@ int compte_premiers_naif(int n) {
 }
 
 
-int compte_premiers_cieve(int n) {
+int compte_premiers_cieve(long long int n) {
     if (n < 2)
         return 0;
 
     bool est_premier[n+1];
     if (est_premier == NULL) {
-        printf("Erreur d'allocation mémoire.\n");
+        printf("Erreur.\n");
         return -1;
     }
 
@@ -53,5 +53,9 @@ int compte_premiers_cieve(int n) {
         if (est_premier[i])
             compteur++;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 02ad8f6 (test$)
     return compteur;
 }
