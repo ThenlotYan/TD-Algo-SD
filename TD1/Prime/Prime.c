@@ -53,7 +53,5 @@ int compte_premiers_cieve(int n) {
         if (est_premier[i])
             compteur++;
     }
-
-    free(est_premier);
     return compteur;
 }
