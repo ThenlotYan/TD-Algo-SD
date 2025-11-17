@@ -103,6 +103,7 @@ void merge_sort(int *arr, int n)
     mergesort_rec(arr, tmp, 0, n - 1);
     free(tmp);
 }
+
 int partition(int *arr, int l, int r)
 {
     int pivot = arr[r];
